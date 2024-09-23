@@ -280,7 +280,7 @@ void resetWebcamPanel() throws DermalogException, DermalogFaceSdkException {
         }
         return baos.toByteArray();
     }
-//ch
+//
     public void face_matching(byte[] applicantPortrait, byte[] candidatePortrait) throws IOException {
 
         try {
