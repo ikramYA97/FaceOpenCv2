@@ -2,7 +2,7 @@
   <artifact type="jar" name="FaceOpenCv:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/FaceOpenCv_jar</output-path>
     <root id="archive" name="FaceOpenCv.jar">
-      <element id="module-output" name="FaceOpenCv" />
+      <element id="module-output" name="FaceOpenCv2" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/19.0.2.1/javafx-base-19.0.2.1.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/DERMALOG/dermalog.face.tracking2/1.1.0/dermalog.face.tracking2-1.1.0.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19.0.2.1/javafx-controls-19.0.2.1.jar" path-in-jar="/" />
