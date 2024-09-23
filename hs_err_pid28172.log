@@ -1,0 +1,83 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffb90383ca2, pid=28172, tid=0x0000000000006600
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_271-b09) (build 1.8.0_271-b09)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.271-b09 mixed mode windows-amd64 compressed oops)
+# Problematic frame:
+# C  0x00007ffb90383ca2
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000023498a1c800):  JavaThread "Finalizer" daemon [_thread_in_native, id=26112, stack(0x0000008f39e00000,0x0000008f39f00000)]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x0000000000000000
+
+Registers:
+RAX=0x0000000000000000, RBX=0x0000000000000000, RCX=0x0000000000000000, RDX=0x0000008f39efea40
+RSP=0x0000008f39efea10, RBP=0x0000008f39efeed8, RSI=0x0000000000000000, RDI=0x00000234b5466570
+R8 =0x0000023480671500, R9 =0x0000000000000001, R10=0x0000000000008000, R11=0x0000008f39efe910
+R12=0x0000000000000000, R13=0x00000234a5793bd8, R14=0x0000008f39efef00, R15=0x0000023498a1c800
+RIP=0x00007ffb90383ca2, EFLAGS=0x0000000000010246
+
+Top of Stack: (sp=0x0000008f39efea10)
+0x0000008f39efea10:   0000000000000000 000002349ba47410
+0x0000008f39efea20:   0000000000000000 00000000000000a2
+0x0000008f39efea30:   0000023400000000 0000000000000000
+0x0000008f39efea40:   0000000000000000 000002349ba62580
+0x0000008f39efea50:   00650074006e0049 0074006100720067
+0x0000008f39efea60:   0057002000640065 0061006300620065
+0x0000008f39efea70:   000000000000006d 0000000000000000
+0x0000008f39efea80:   0000000000000000 0000000000000000
+0x0000008f39efea90:   0000000000000000 0000000000000000
+0x0000008f39efeaa0:   0000000000000000 0000000000000000
+0x0000008f39efeab0:   0000000000000000 0000000000000000
+0x0000008f39efeac0:   0000000000000000 0000000000000000
+0x0000008f39efead0:   0000000000000000 0000000000000000
+0x0000008f39efeae0:   0000000000000000 0000000000000000
+0x0000008f39efeaf0:   0000000000000000 0000000000000000
+0x0000008f39efeb00:   0000000000000000 0000000000000000 
+
+Instructions: (pc=0x00007ffb90383ca2)
+0x00007ffb90383c82:   00 00 48 8b f9 33 f6 0f 1f 80 00 00 00 00 48 8b
+0x00007ffb90383c92:   4f 30 48 8d 54 24 30 48 89 74 24 30 89 74 24 20
+0x00007ffb90383ca2:   48 8b 01 ff 50 28 8b d8 85 c0 0f 88 af 00 00 00
+0x00007ffb90383cb2:   48 8b 4c 24 30 4c 8d 4c 24 20 48 89 74 24 28 4c 
+
+
+Register to memory mapping:
+
+RAX=0x0000000000000000 is an unknown value
+RBX=0x0000000000000000 is an unknown value
+RCX=0x0000000000000000 is an unknown value
+RDX=0x0000008f39efea40 is pointing into the stack for thread: 0x0000023498a1c800
+RSP=0x0000008f39efea10 is pointing into the stack for thread: 0x0000023498a1c800
+RBP=0x0000008f39efeed8 is pointing into the stack for thread: 0x0000023498a1c800
+RSI=0x0000000000000000 is an unknown value
+RDI=0x00000234b5466570 is an unknown value
+R8 =0x0000023480671500 is an unknown value
+R9 =0x0000000000000001 is an unknown value
+R10=0x0000000000008000 is an unknown value
+R11=0x0000008f39efe910 is pointing into the stack for thread: 0x0000023498a1c800
+R12=0x0000000000000000 is an unknown value
+R13={method} {0x00000234a5793be0} 'delete' '(J)V' in 'org/opencv/videoio/VideoCapture'
+R14=0x0000008f39efef00 is pointing into the stack for thread: 0x0000023498a1c800
+R15=0x0000023498a1c800 is a thread
+
+
+Stack: [0x0000008f39e00000,0x0000008f39f00000],  sp=0x0000008f39efea10,  free space=1018k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  0x00007ffb90383ca2
+C  0x00007ffb90383499
+C  0x00007ffb90383b64
+C  0x00007ffb903835ec
+C

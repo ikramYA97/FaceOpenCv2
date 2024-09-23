@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="561.0" prefWidth="757.0" style="-fx-background-color: #EFEFEF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.HomeController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="432.0" layoutX="166.0" layoutY="55.0" stroke="BLACK" strokeType="INSIDE" width="450.0" />
+      <ImageView fx:id="FaceImage" fitHeight="225.0" fitWidth="254.0" layoutX="286.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="capture" layoutX="305.0" layoutY="400.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="163.0" style="-fx-background-color: #0857ff;" text="Capture" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font></Button>
+      <AnchorPane fx:id="ProgressBox" layoutX="214.0" layoutY="102.0" onDragDetected="#createCapture" prefHeight="270.0" prefWidth="352.0" style="-fx-background-color: ffffff;" visible="false">
+         <children>
+            <ProgressIndicator fx:id="progressBar" layoutX="25.0" layoutY="57.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="199.0" prefWidth="298.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ProgressIndicator>
+            <Text fill="#0857ff" layoutX="29.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez patienter , Chargement en cours" wrappingWidth="321.18303871154785">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ProgressIndicator fx:id="progressBar1" layoutX="268.0" layoutY="83.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="246.0" visible="false">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ProgressIndicator>
+   </children>
+</AnchorPane>
